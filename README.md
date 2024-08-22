@@ -45,4 +45,3 @@ Navigate to `http://localhost:5173` and you should see the login page!
 To complete the tech test you will need to clone down this GitHub repo, create a feature branch from main and do all of your work from this branch, create a single PR with all your changes back into main. When you’re ready, share your submission back with us, ideally via a private Github repository with the PR open so we can schedule it for review. We review submissions as quickly as possible. You’ll hear back from us no matter what.
 
 Remember, we are not timing you and there is no deadline. Work at your own pace. Reach out if you're stuck or have any questions. We want you to succeed and are here to help! We won't give you much in the way of hints, but we can at least help you orient yourself about the challenge!
-ABC test
