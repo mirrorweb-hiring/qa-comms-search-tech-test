@@ -27,7 +27,7 @@ export default function Message() {
   return (
     <div className='relative h-full'>
       <div className='h-full mx-auto max-w-3xl px-8'>
-        <div className='h-full overflow-hidden bg-white ring-1 ring-gray-900/5 rounded-xl shadow'>
+        <div className='h-full bg-white ring-1 ring-gray-900/5 rounded-xl shadow'>
           <div className='h-full p-8 space-y-6'>
             <div className='space-y-1'>
               <h2 className='text-lg font-semibold leading-6 text-gray-900'>

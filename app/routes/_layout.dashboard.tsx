@@ -29,7 +29,7 @@ export default function Dashboard() {
               <h3 className='text-base font-semibold leading-6 text-gray-900'>
                 Last 30 days
               </h3>
-              <dl className='mt-4 grid grid-cols-2 divide-x overflow-hidden rounded-lg bg-white shadow'>
+              <dl className='mt-4 grid grid-cols-2 divide-x rounded-lg bg-white shadow'>
                 <StatsTotalCard
                   name='Total Messages'
                   currentMonth={totalMessages.currentMonth}
@@ -112,7 +112,7 @@ function MessageList() {
   return (
     <ul
       role='list'
-      className='mt-4 divide-y divide-gray-100 overflow-hidden bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl'
+      className='mt-4 divide-y divide-gray-100 bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl'
     >
       {messages.map((message: any) => {
         return (
@@ -136,7 +136,7 @@ function MessageList() {
               </div>
             </div>
             <div className='flex shrink-0 items-center gap-x-4'>
-              <div className='hidden sm:flex sm:flex-col sm:items-end'>
+              <div className='sm:flex sm:flex-col sm:items-end'>
                 <p className='text-xs leading-5 text-gray-500'>
                   {new Date(message.created_at * 1000).toLocaleString()}
                 </p>

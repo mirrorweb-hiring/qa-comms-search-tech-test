@@ -27,7 +27,7 @@ export default function SearchResults() {
     <div className='py-4'>
       <main>
         <div className='mx-auto max-w-6xl py-4 px-8'>
-          <div className='overflow-hidden rounded-lg bg-white shadow'>
+          <div className='rounded-lg bg-white shadow'>
             <div className='p-8 space-y-6'>
               <div className='space-y-1'>
                 <h2 className='text-xl font-semibold leading-6 text-gray-900'>
@@ -66,7 +66,7 @@ export default function SearchResults() {
                             </div>
                           </div>
                           <div className='flex shrink-0 items-center gap-x-4'>
-                            <div className='hidden sm:flex sm:flex-col sm:items-end'>
+                            <div className='sm:flex sm:flex-col sm:items-end'>
                               <a
                                 href={`/search/results/${
                                   message.id

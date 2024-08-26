@@ -11,7 +11,7 @@ export default function Search() {
     <div className='py-4'>
       <main>
         <div className='mx-auto max-w-4xl py-4 px-8'>
-          <div className='overflow-hidden rounded-lg bg-white shadow'>
+          <div className='rounded-lg bg-white shadow'>
             <div className='p-8 space-y-6'>
               <div className='space-y-1'>
                 <h2 className='text-xl font-semibold leading-6 text-gray-900'>
