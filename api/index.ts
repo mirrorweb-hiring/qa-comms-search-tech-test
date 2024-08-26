@@ -11,7 +11,6 @@ import {
   validateSession,
   verifyPassword,
 } from './auth'
-import { wait } from './utils'
 
 const db = new Database('db/comms.db')
 
@@ -37,7 +36,7 @@ app.use(
 )
 
 // Set a timeout of 5 seconds for all requests
-app.use(timeout(3000))
+app.use(timeout(5000))
 
 app.get('/me', async (c) => {
   // Check if the user is authenticated
@@ -224,8 +223,6 @@ app.get('/search', (c) => {
 })
 
 app.get('/stats/total-messages', async (c) => {
-  await wait(Math.random() * 4000)
-
   const sessionId = getCookie(c, 'comms_auth')
   if (!sessionId) return c.json({ error: 'Unauthenticated' }, 401)
   const { session, user } = validateSession(db, sessionId)
