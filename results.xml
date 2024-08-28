@@ -1,0 +1,52 @@
+<testsuites id="" name="" tests="6" failures="1" skipped="4" errors="0" time="61.69847599999999">
+<testsuite name="test-automation\tests\application.spec.js" timestamp="2024-08-28T12:48:05.267Z" hostname="chromium" tests="6" failures="1" skipped="4" time="39.103" errors="0">
+<testcase name="Login page loads" classname="test-automation\tests\application.spec.js" time="10.647">
+<system-out>
+<![CDATA[Comms Search
+]]>
+</system-out>
+</testcase>
+<testcase name="User can login to application" classname="test-automation\tests\application.spec.js" time="28.448">
+<failure message="application.spec.js:19:1 User can login to application" type="FAILURE">
+<![CDATA[  [chromium] › test-automation\tests\application.spec.js:19:1 › User can login to application ──────
+
+    Error: Timed out 10000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Last 30 days')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 10000ms
+      - waiting for locator('text=Last 30 days')
+
+
+      25 |     //Assertion to check Last 30 days dashboard is visible
+      26 |     const dashboardPage = page.locator(TestPage.last30Days);
+    > 27 |     await expect(dashboardPage).toBeVisible();
+         |                                 ^
+      28 |     await expect(page.locator(TestPage.last30Days)).toHaveText('Last 30 days');
+      29 |
+      30 |     //Assertion to check logout button is visible, meaning login was successful
+
+        at C:\Users\ZoeMilne\qa-comms-search-tech-test-ZM-Fork\test-automation\tests\application.spec.js:27:33
+]]>
+</failure>
+</testcase>
+<testcase name="Dashboards are populated" classname="test-automation\tests\application.spec.js" time="0.008">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Most recent messages populated" classname="test-automation\tests\application.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="User can search &amp; view message enteries" classname="test-automation\tests\application.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="User can navigate from Serch -&gt; Dashboard" classname="test-automation\tests\application.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>
