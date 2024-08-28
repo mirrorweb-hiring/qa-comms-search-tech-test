@@ -10,9 +10,7 @@
     "dev": "npm-run-all --parallel dev:api dev:ui",
     "build": "remix vite:build",
     "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc",
-    "test:e2e:appspec": "cross-env PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml npx playwright test test-automation/tests/application.spec.js --project=chromium --workers=1 --retries=0 --reporter=junit",
-    "test:e2e:apispec": "cross-env PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml npx playwright test test-automation/tests/api.spec.js --project=chromium --workers=1 --retries=0 --reporter=junit"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
@@ -23,7 +21,6 @@
     "@remix-run/serve": "^2.10.3",
     "better-sqlite3": "^11.1.2",
     "cookie": "^0.6.0",
-    "cross-env": "^7.0.3",
     "hono": "^4.5.1",
     "isbot": "^4.1.0",
     "nanoid": "^5.0.7",
@@ -32,7 +29,6 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
-    "@playwright/test": "^1.46.1",
     "@remix-run/dev": "^2.10.3",
     "@tailwindcss/forms": "^0.5.7",
     "@types/better-sqlite3": "^7.6.11",
