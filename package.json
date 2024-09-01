@@ -15,6 +15,7 @@
   "dependencies": {
     "@heroicons/react": "^2.1.5",
     "@hono/node-server": "^1.12.0",
+    "@playwright/test": "^1.46.1",
     "@node-rs/argon2": "^1.8.3",
     "@remix-run/node": "^2.10.3",
     "@remix-run/react": "^2.10.3",
